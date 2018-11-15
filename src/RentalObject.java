@@ -6,13 +6,13 @@ public class RentalObject {
     private DVD[] dvds;
     private boolean available;
     private Date dueDate;
+    private UserData user;
 
-    public RentalObject(String title, int id, DVD[] dvds, boolean available, Date dueDate) {
+    public RentalObject(String title, int id, DVD[] dvds, boolean available) {
         this.title = title;
         this.id = id;
         this.dvds = dvds;
         this.available = available;
-        this.dueDate = dueDate;
     }
 
     public int getId() {
@@ -30,6 +30,9 @@ public class RentalObject {
     public DVD[] getDvds() {
         return dvds;
     }
+    public UserData getUser() {
+        return user;
+    }
 
     public void setAvailable(boolean available) {
         this.available = available;
@@ -45,5 +48,13 @@ public class RentalObject {
     }
     public void setTitle(String title) {
         this.title = title;
+    }
+    public void setUser(UserData user) {
+        this.user = user;
+    }
+
+    public void rentObject(UserData ud, Date dueDate) {
+    }
+    public void returnObject(){
     }
 }

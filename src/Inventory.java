@@ -8,5 +8,4 @@ public class Inventory {
     public boolean checkAvailability(String title, int id) {
         return true;
     }
-
 }
